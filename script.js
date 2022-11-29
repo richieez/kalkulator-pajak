@@ -70,7 +70,7 @@ document.querySelector(".hitung").addEventListener("click", function () {
     } else if (income > 50000000 && income <= 250000000) {
       income -= 50000000;
       income *= 0.15;
-      console.log(income);
+
       income += 2500000;
 
       document.querySelector(".hasil-pajak-tahunan").textContent = rupiah(
@@ -80,10 +80,29 @@ document.querySelector(".hitung").addEventListener("click", function () {
         Math.trunc(income / 12)
       );
     } else if (income > 250000000 && income <= 500000000) {
-      income -= 50000000;
+      income -= 250000000;
       income * 0.25;
+
+      income += 32500000;
+
+      document.querySelector(".hasil-pajak-tahunan").textContent = rupiah(
+        Math.trunc(income)
+      );
+      document.querySelector(".hasil-pajak-bulanan").textContent = rupiah(
+        Math.trunc(income / 12)
+      );
     } else {
-      income * 0.3;
+      income -= 500000000;
+      income *= 0.3;
+
+      income += 95000000;
+
+      document.querySelector(".hasil-pajak-tahunan").textContent = rupiah(
+        Math.trunc(income)
+      );
+      document.querySelector(".hasil-pajak-bulanan").textContent = rupiah(
+        Math.trunc(income / 12)
+      );
     }
   }
 });
