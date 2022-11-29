@@ -15,46 +15,61 @@
     <h1>Kalkulator Pajak</h1>
     <br />
 
-    <h6>Penghasilan Perbulan</h6>
-    <input
-      id="source"
-      type="text"
-      class="form-control mx-auto text-center penghasilan"
-      style="width: 20rem"
-      placeholder="Masukkan jumlah penghasilan bersih"
-      oninput="copyData('source', 'target')"
-    />
-    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h6>Penghasilan Perbulan</h6>
+          <input
+            id="source"
+            type="text"
+            class="form-control mx-auto text-center penghasilan"
+            style="width: 20rem"
+            placeholder="Masukkan jumlah penghasilan bersih"
+            oninput="copyData('source', 'target')"
+          />
+          <br />
 
-    <span id="target" class="myDIV"></span>
-    <br />
-    <br />
+          <span id="target" class="myDIV"></span>
+          <br />
+          <br />
+          <h6>Kategori PTKP</h6>
+          <select
+            id="pilih-kategori"
+            class="form-select mx-auto text-center"
+            style="width: 8rem"
+          >
+            <option selected value="1">TK/0</option>
+            <option value="2">TK/1</option>
+            <option value="3">TK/2</option>
+            <option value="4">TK/3</option>
+            <option value="5">K/0</option>
+            <option value="6">K/1</option>
+            <option value="7">K/2</option>
+            <option value="8">K/3</option>
+            <option value="9">K/I/0</option>
+            <option value="10">K/I/1</option>
+            <option value="11">K/I/2</option>
+            <option value="12">K/I/3</option>
+          </select>
+          <br />
 
-    <h6>Kategori PTKP</h6>
-    <select
-      id="pilih-kategori"
-      class="form-select mx-auto text-center"
-      style="width: 8rem"
-    >
-      <option selected value="1">TK/0</option>
-      <option value="2">TK/1</option>
-      <option value="3">K/0</option>
-      <option value="4">K/1</option>
-      <option value="5">K/I/0</option>
-      <option value="6">K/I/1</option>
-    </select>
-    <br />
+          <button class="btn-outline-primary hitung">Hitung!</button>
 
-    <button class="btn-outline-primary hitung">Hitung!</button>
+          <br />
+          <br />
 
-    <br />
-    <br />
+          <h6>Total Pajak pertahun Anda</h6>
+          <p class="hasil-pajak-tahunan">Rp 0</p>
 
-    <h6>Total Pajak pertahun Anda</h6>
-    <p class="hasil-pajak-tahunan">Rp 0</p>
+          <h6>Total Pajak perbulan Anda</h6>
+          <p class="hasil-pajak-bulanan">Rp 0</p>
+        </div>
 
-    <h6>Total Pajak perbulan Anda</h6>
-    <p class="hasil-pajak-bulanan">Rp 0</p>
+        <div class="col-lg-4">
+          <img src="ptkp.png" class="mx-auto img-fluid" />
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

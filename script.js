@@ -29,13 +29,25 @@ document.querySelector(".hitung").addEventListener("click", function () {
   } else if (tipeKategori == 2) {
     pengurangan = 58500000;
   } else if (tipeKategori == 3) {
-    pengurangan = 58500000;
-  } else if (tipeKategori == 4) {
     pengurangan = 63000000;
+  } else if (tipeKategori == 4) {
+    pengurangan = 67500000;
   } else if (tipeKategori == 5) {
-    pengurangan = 112500000;
+    pengurangan = 58500000;
   } else if (tipeKategori == 6) {
+    pengurangan = 63000000;
+  } else if (tipeKategori == 7) {
+    pengurangan = 67500000;
+  } else if (tipeKategori == 8) {
+    pengurangan = 72000000;
+  } else if (tipeKategori == 9) {
+    pengurangan = 112500000;
+  } else if (tipeKategori == 10) {
     pengurangan = 117000000;
+  } else if (tipeKategori == 11) {
+    pengurangan = 121500000;
+  } else if (tipeKategori == 12) {
+    pengurangan = 126000000;
   }
 
   if (income == 0) {
